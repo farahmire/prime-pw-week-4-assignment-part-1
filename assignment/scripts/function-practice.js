@@ -16,7 +16,7 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-
+name = "Hello Farah!"
   return name;
 }
 
@@ -71,20 +71,23 @@ console.log(getLast());
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(array) {
-  let value = 3;
+function find( value, array) {
+ 
   for (i = 0; i < array.length; i++) {
-    if (value == array[i]) {
-
+    if (value === array[i]) {
+     
       return true;
     }
     else {
       return false;
     }
   }
-}
+} 
 
-console.log(find(array));
+console.log(find(6,[6,9,3]));
+
+
+
 
 // ----------------------
 // Stretch Goals
@@ -108,24 +111,23 @@ console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
-  let sum= 0;
+  let sum = 0;
+  // TODO: loop to add items
   for (let f = 0; f < array.length; f += 1) {
     sum += array[f];
   }
   return sum;
 }
 
-// TODO: loop to add items
-
-
-
 console.log(sumAll(array));
+
+
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
 
-
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
-//     here in a comment, write the function, and test it!
+//     here in a comment, write the function, and test it! 
+//
